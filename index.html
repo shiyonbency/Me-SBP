@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me-Shiyon Bency Philip</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Video Background Styling */
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        /* Profile Card Styling */
+        .profile-card {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .profile-card img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        /* Link Styling */
+        .social-links a {
+            transition: transform 0.3s ease;
+            color: #ffffff;
+            font-size: 2rem;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+            color: #ff4081; /* Add a hover color */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen text-white">
+
+    <!-- Video Background -->
+    <video autoplay muted loop id="background-video">
+        <source src="https://videos.pexels.com/video-files/5608053/5608053-sd_640_360_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Profile Card -->
+    <div class="profile-card text-center max-w-md mx-auto p-8 text-white">
+        <img src="https://coin-images.coingecko.com/coins/images/34755/large/IMG_0015.png?1705957165" alt="Profile Picture" class="mx-auto mb-4">
+        <h1 class="text-3xl font-bold mb-2">Shiyon Bency Philip</h1>
+        <p class="text-lg mb-6">Web Developer | Tech Enthusiast | Bill Gates (Friend)</p>
+
+        <!-- Social Media Links -->
+        <div class="social-links flex justify-center gap-6">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/iam_sbp.i/?__pwa=1" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <!-- Twitter (X) -->
+            <a href="https://x.com/ShiyonPhilip" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <!-- Pinterest -->
+            <a href="https://in.pinterest.com/shiyonbency3/" target="_blank">
+                <i class="fab fa-pinterest"></i>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
